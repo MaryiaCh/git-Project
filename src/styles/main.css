@@ -172,34 +172,15 @@ body {
   z-index: 10;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .swiper {
   width: 100%;
   height: auto;
 }
-
-.img {
-  width: 100%;
-  border-radius: 1rem;
+.swiper-scrollbar {
+  bottom: 0;
 }
-
-.products {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.product {
-  position: relative;
-  width: 25%;
-  margin: 1rem;
-  padding: 0.5rem;
-  border: 1px solid #000000;
-  border-radius: 1rem;
-  color: #000000;
+.swiper-scrollbar-drag {
+  background-color: rgb(206, 93, 206);
 }
 
 .navbar {
@@ -226,6 +207,35 @@ body {
   text-decoration: none;
 }
 
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product__item {
+  width: 25%;
+  margin: 1rem;
+  padding: 2rem;
+  text-align: center;
+  background-color: rgb(64, 0, 64);
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.product__image {
+  padding: 2rem;
+}
+.product__title {
+  padding: 1rem;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+.product__description {
+  padding: 1rem;
+  color: rgb(206, 93, 206);
+  line-height: 1.5;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -240,10 +250,54 @@ body {
   z-index: 10;
 }
 
+.section {
+  padding: 3rem 0;
+  border-bottom: 2px solid rgb(206, 93, 206);
+}
+.section__image {
+  display: flex;
+  justify-content: center;
+}
+.section__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section__block_image {
+  position: relative;
+  width: 50%;
+  height: 30rem;
+  background-color: rgb(64, 0, 64);
+  -webkit-clip-path: polygon(3vh 18%, 100% 100vh, 100vh 100%, 100% 0);
+          clip-path: polygon(3vh 18%, 100% 100vh, 100vh 100%, 100% 0);
+}
+.section__block_title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-25%, -45%);
+  font-size: 80px;
+  font-weight: 700;
+  color: rgb(206, 93, 206);
+  text-align: center;
+}
+.section__block_description {
+  transition: all 0.3s;
+  width: 50%;
+  padding: 3rem;
+  text-align: center;
+}
+.section__block_description:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(77, 34, 104, 0.4);
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   background: rgb(64, 0, 64);
   padding: 2rem;
   width: 100%;

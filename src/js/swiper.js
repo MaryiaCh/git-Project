@@ -1,19 +1,19 @@
-import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+// import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
     
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
+// const swiper = new Swiper('.swiper', {
+//   // Optional parameters
+//   direction: 'horizontal',
+//   loop: true,
 
 
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
+//   // And if we need scrollbar
+//   scrollbar: {
+//     el: '.swiper-scrollbar',
+//   },
+// });
 
-export default swiper;
+// export default swiper;
 
 
 // import Swiper, { Navigation, Pagination } from 'swiper';
@@ -28,3 +28,16 @@ export default swiper;
 //     modules: [Navigation, Pagination],
 //     ...
 //   });
+
+
+import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+    
+const swiper = new Swiper('.swiper', {
+  direction: 'horizontal',
+  loop: true,
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+export default swiper;

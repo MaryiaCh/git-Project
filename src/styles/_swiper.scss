@@ -1,31 +1,12 @@
-* {
-    box-sizing: border-box;
+.swiper {
+  width: 100%;
+  height: auto;
+
+  &-scrollbar {
+    bottom: 0;
+
+    &-drag {
+      background-color: $color-violet;
+    }
   }
-  
-  .swiper {
-    width: 100%;
-    height: auto;
-  }
-  
-  .img {
-    width: 100%;
-    border-radius: 1rem;
-  }
-  
-  .products {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .product {
-    position: relative;
-    width: calc(100% / 4);
-    margin: 1rem;
-    padding: .5rem;
-  
-    border: 1px solid #000000;
-    border-radius: 1rem;
-  
-    color: #000000;
-  }
+}

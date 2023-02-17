@@ -1,5 +1,6 @@
 .footer {
     @include flex ();
+    position: relative;
     background: $primary-color;
     padding: $p-2;
     
