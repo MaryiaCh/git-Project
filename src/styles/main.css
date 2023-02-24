@@ -128,6 +128,11 @@ body {
   transition: all 0.5s;
 }
 
+.main {
+  padding: 2rem 0;
+  margin: 4rem 0;
+}
+
 .btn {
   transition: all 0.3s;
   display: inline-block;
@@ -172,14 +177,6 @@ body {
   z-index: 10;
 }
 
-.back {
-  color: rgb(206, 93, 206);
-}
-.back:hover {
-  color: rgb(27, 8, 27);
-  border-bottom: 1px solid rgb(27, 8, 27);
-}
-
 .swiper {
   width: 100%;
   height: auto;
@@ -213,6 +210,14 @@ body {
   border-bottom: 1px solid rgb(206, 93, 206);
   color: rgb(206, 93, 206);
   text-decoration: none;
+}
+
+.back {
+  color: rgb(206, 93, 206);
+}
+.back:hover {
+  color: rgb(27, 8, 27);
+  border-bottom: 1px solid rgb(27, 8, 27);
 }
 
 .product {
