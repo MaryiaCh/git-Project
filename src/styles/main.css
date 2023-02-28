@@ -177,6 +177,55 @@ body {
   z-index: 10;
 }
 
+.form {
+  width: 450px;
+  height: 500px;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: rgb(174, 174, 239);
+  color: white;
+  border-radius: 5%;
+  text-align: center;
+}
+.form__title {
+  color: rgb(27, 8, 27);
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+.form__subtitle {
+  color: rgb(27, 8, 27);
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+.form__input {
+  background-color: white;
+  border-radius: 20px;
+  color: rgb(27, 8, 27);
+  margin: 1rem;
+  font-size: 15px;
+  width: 90%;
+  margin-top: 40px;
+  box-sizing: border-box;
+  height: 50px;
+  padding: 4px 20px 0;
+  border: none;
+}
+.form__btn {
+  background-color: rgb(12, 219, 12);
+  color: rgb(27, 8, 27);
+  padding: 10px;
+  border: none;
+  width: 100%;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  height: 40px;
+  margin-top: 38px;
+  text-align: center;
+}
+
 .swiper {
   width: 100%;
   height: auto;
